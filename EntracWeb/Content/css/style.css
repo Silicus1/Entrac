@@ -1,0 +1,262 @@
+@charset "utf-8";
+/* CSS Document */
+/************* fonts *************/
+@font-face {
+       font-family: 'SegoeUIRegular';
+    src: url('../fonts/5834388143.eot');
+    src: url('../fonts/5834388143.eot') format('embedded-opentype'),
+         url('../fonts/5834388143.woff') format('woff'),
+         url('../fonts/5834388143.ttf') format('truetype'),
+         url('../fonts/5834388143.svg#SegoeUIRegular') format('svg');
+    }
+/************* fonts *************/	
+
+*{ margin:0px;
+   padding:0px;
+	}
+body{ margin:0px; font-family: "SegoeUIRegular";}
+.wrapper{ margin:0 auto; width:1000px;}
+.clear{ clear:both;}
+header{ height:55px;}
+.logo{ float:left; margin:10px 0 0 0;}
+nav{background:#333; border-bottom:2px solid #29a7e1;
+   -moz-box-shadow:    0 10px 10px -9px #000000 inset;
+   -webkit-box-shadow: 0 10px 10px -9px #000000 inset;
+   box-shadow:         0 10px 10px -9px #000000 inset;
+}
+.main-nav{	
+	height: 40px;
+    padding-top: 8px;
+}
+ul li{ list-style-type:none;}
+.main-nav li{ float:left; margin:0 15px; padding:5px;}
+.main-nav li:hover{ background-color:#29a7e1;}
+.main-nav li.active { background-color:#29a7e1;}
+.main-nav li a{ color:#ffffff; height:30px; text-decoration:none; display:block; font-size:18px;}
+.main-nav li a:hover{}
+.header-right{ float:right;}
+
+.welcome{ float:left; border-right:1px solid #e0e0e0;}
+/* display the dropdown */
+.welcome > ul{
+        padding: 0;
+        list-style: none;
+    }
+    .welcome li{
+        float: left;
+        width: 160px;
+        text-align: center;
+    }
+    .welcome li a{
+        display: block;
+        color: #333;
+        text-decoration: none;
+		line-height: 55px;
+		text-align:left;
+		padding:0 10px;
+    }
+	.welcome li li a{
+		line-height:35px;
+		transition: background ease 0.5s;
+		-webkit-transition:background ease 0.5s;
+		-moz-transition:background ease 0.5s;
+	}
+    .welcome li li a:hover{
+        color: #fff;
+        background: #939393;
+    }
+    .welcome li ul{
+        display: none;
+		background: #F0F0F0;
+		position: absolute;
+		width: 160px;
+		z-index: 1;
+    }
+    .welcome li:hover ul{
+        display: block; /* display the dropdown */
+    }
+
+
+.help{ float:left; border-right:1px solid #e0e0e0;height: 40px;
+    padding: 15px 20px 0;}
+
+.home { background:url(../images/icon-home.png) no-repeat left top;
+ padding-left: 30px;
+}
+.home:hover {
+	background-position:0 -30px;    
+}
+.admin{ background:url(../images/icon-admin.png) no-repeat left top;
+ padding-left: 30px;}
+.admin:hover {
+	background-position:0 -30px;    
+}
+.admin.active {
+	background-position:0 -30px;    
+}
+
+.jobs{ background:url(../images/icon-jobs.png) no-repeat left top;
+ padding-left: 30px;}
+.jobs:hover {
+	background-position:0 -30px;    
+}
+.jobs.active {
+	background-position:0 -30px;    
+}
+
+.time{ background:url(../images/icon-time.png) no-repeat left top;
+ padding-left: 30px;}
+.time:hover {
+	background-position:0 -31px;    
+}
+.time.active {
+	background-position:0 -31px;    
+}
+
+.reports{ background:url(../images/icon-reports.png) no-repeat left top;
+ padding-left: 30px;}
+.reports:hover {
+	background-position:0 -31px;    
+}
+.reports.active {
+	background-position:0 -31px;    
+}
+
+.signin{ background:url(../images/icon-signin.png) no-repeat left top;
+ padding-left: 30px;}
+
+
+
+
+h1{ font-size:24px; color:#000000; font-weight:normal; line-height:2em;}
+h2{ font-size:18px; font-weight:normal;}
+
+
+.grey-bar{ background-color:#e3e3e3; border:1px solid #d3d3d3; border-radius:5px;}
+.input-box{ width:694px; border-right:1px solid #c9c9c9; padding:8px 10px; float:left;}
+.inp{ height:25px; padding:5px; border:1px solid #d3d3d3; width:682px; font-size:18px; color:#ababab; background:#ffffff url(../images/icon-search.png) no-repeat right 10px center; }
+
+.include{ width:135px; float:left;padding:8px 10px; color:#4c4c4c; border-right:1px solid #c9c9c9; height:37px; line-height:35px; }
+.chk{ margin-right:10px;}
+.excel{  float:left;padding:8px 23px; border-right:1px solid #c9c9c9; height:37px; line-height:35px;}
+.print{  float:left;padding:8px 23px; height:37px; line-height:35px;}
+
+.sidebar-left{ border-right: 1px solid #C9C9C9;
+    float: left;
+    padding-top: 40px;
+    width: 200px;
+	min-height: 485px;
+	}
+.fl{ float:left;}
+.fr{ float:right;}
+
+.fl.img {
+    width: 30px; padding: 8px 0 0;
+}
+.fl.c-panel {
+    width: 165px;
+}
+
+.content-right{ float: left;
+    padding: 30px 20px;
+    width: 700px;}
+	
+footer {
+    background-color: #DCDCDC;
+    padding: 8px 0;
+	font-size:12px;
+	color:#636363;
+	-moz-box-shadow:0px -3px 5px -2px #CECFCF;
+  -webkit-box-shadow:0px -3px 5px -2px #CECFCF;
+  box-shadow:0px -3px 5px -2px #CECFCF;
+  border-top:1px solid #b6b6b6;
+}
+footer p{
+	text-shadow:1px 1px #FFF;
+}
+.loginbox{background: #E3E3E3;
+    height: 310px;
+    margin: 50px auto 350px;
+    padding: 30px 70px;
+    width: 330px;}
+.user-photo{ width:94px; height:94px; margin:10px auto;}
+.login-inp {
+    height: 35px;
+    margin: 10px 0;
+    width: 97%;
+	padding:0 5px;
+	background:#ffffff;
+	border:none;
+	color:#ababab;
+	line-height:35px;
+	font-size:16px;
+	/*padding:0px 10px;*/
+}
+.login-submit{
+	height: 35px;
+    margin: 10px 0;
+    width: 100%;
+	background:#2197ce url(../images/login-submit.png) repeat-x left top;
+	border:none;
+	line-height:31px;
+	cursor:pointer;
+	border-radius:5px;
+	text-align:center;
+	}
+.login-submit:hover{
+	background:#2197ce url(../images/login-submit1.png) repeat-x left top;
+}
+
+.my-button:before {
+    background-image: url("../images/icon-signin.png");
+    background-position: center center;
+    background-repeat: no-repeat;    
+    content: "";
+    height: 26px;
+    left: 15px;
+    margin-top: -12px;
+    position: absolute;
+    top: 50%;
+    width: 21px;
+}
+.my-button {
+      
+    color: #FFFFFF;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    padding: 0px 40px 0px 45px;
+    position: relative;
+    text-decoration: none;
+}
+
+.login-submit > input {
+    background: none /*url(../images/icon-signin.png) no-repeat center center*/;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+   /* width: 100%;
+	height:100%;*/
+}
+.forgot-pwd{ float:right;line-height:30px;}
+.forgot-pwd a{ color:#29a7e1; font-size:14px; text-decoration:none;}
+.forgot-pwd a:hover{ text-decoration:underline;}
+.stay-signed{ float:left; color:#4c4c4c; font-size:14px; line-height:30px;}
+.stay-signed > input {
+    margin-right: 5px;
+}
+
+
+/* Styles for tooltip   */
+a.tooltip {outline:none; color:#4c4c4c; font-size:14px; line-height:30px; text-decoration:none; }
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;}
+a.tooltip span { z-index:10;display:none; padding:14px 20px; margin-top:30px; margin-left:28px; width:315px; line-height:16px; background:#ffffff; }
+
+
+a.tooltip:hover span{ display:inline; position:absolute; left:26%; color:#4c4c4c; background:#ffffff;}
+.callout {z-index:20;position:absolute;top:-10px;border:0;left:36px;} /*CSS3 extras*/
+a.tooltip span { -moz-box-shadow: 0px 0px 8px #CCC; -webkit-box-shadow: 0px 0px 8px #CCC; box-shadow: 0px 0px 8px #CCC; }
+Callout icon:             Background image: none
+
+
+/* Styles for tooltip end here */

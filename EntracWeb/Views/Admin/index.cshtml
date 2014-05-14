@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div>
+    <div class="wrapper">
+        <section>
+            <div class="content">
+                <h1>Welcome to Administration Setup Section</h1>
+                @{
+
+                    Html.RenderPartial("_SearchKeyword");
+                    Html.RenderPartial("_LeftNavigation");
+
+                    <div class="content-right">
+                        <div id="CollapsiblePanel5" class="CollapsiblePanel right fl">
+                            <div class="CollapsiblePanelTab right" tabindex="0">Setup</div>
+                            <div class="CollapsiblePanelContent right">
+                                <ul>
+                                    <li><a href="#">Manage System Settings</a></li>
+                                    <li><a href="#">Manage Currencies and Foreign Exchange Rates</a></li>
+                                    <li><a href="#">Manage Engagement Stages</a></li>
+                                    <li><a href="#">Manage Employees skills</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="CollapsiblePanel6" class="CollapsiblePanel right fl">
+                            <div class="CollapsiblePanelTab right" tabindex="0">Users and Resources</div>
+                            <div class="CollapsiblePanelContent right">
+                                <ul>
+                                    <li><a href="#">Manage User Roles and Permissions</a></li>
+                                    <li><a href="#">Manage Resource Types</a></li>
+                                    <li><a href="#">Manage Users</a></li>
+                                    <li><a href="#">Manage Resources</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div id="CollapsiblePanel7" class="CollapsiblePanel right fl">
+                            <div class="CollapsiblePanelTab right" tabindex="0">Organizational Structure</div>
+                            <div class="CollapsiblePanelContent right">
+                                <ul>
+                                    <li><a href="#">Manage Companies</a></li>
+                                    <li><a href="#">Manage Locations and Holidays</a></li>
+                                    <li><a href="#">Manage Departments and Titles</a></li>
+                                    <li><a href="#">Manage Cost Centers and Rollups</a></li>
+                                    <li><a href="#">Manage Resource Centers</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div id="CollapsiblePanel8" class="CollapsiblePanel right fl">
+                            <div class="CollapsiblePanelTab right" tabindex="0">Tab</div>
+                            <div class="CollapsiblePanelContent right">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Manage Task Types
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Manage Engagement Stages
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Manage Time-Off Reasons
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Manage Billing Cycle
+                                        </a>
+                                    </li>
+                                    <li><a href="#">Manage Payment Terms</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+
+        </section>
+        <div class="clear"></div>
+    </div>
+</div>

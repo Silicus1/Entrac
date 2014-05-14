@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Entrac</title>
+    <script src="~/Content/SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
+    <link href="~/Content/SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/css/style.css" rel="stylesheet" type="text/css">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    @*@Styles.Render("~/Content/css")*@
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryval")
+</head>
+
+<body>
+    <header class="wrapper clear">
+        <div class="logo">
+            <a href="#"><img src="~/Content/images/logo.png" title="Entrac" alt="logo"></a>
+        </div>
+        <div class="header-right">
+            <div class="welcome">
+                <ul>
+
+                    <li>
+                        <a href="#">Welcome Lavesh <img src="~/Content/images/icon-dropdown-arrow.png" alt="dropdown arrow" title="select"></a>
+                        <ul>
+                            <li><a href="#">Option1</a></li>
+                            <li><a href="#">Option2</a></li>
+                            <li><a href="#">Option3</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="help"><a href="#"><img src="~/Content/images/icon-question-mark.png" alt="help" title="help"></a></div>
+        </div>
+
+
+    </header>
+
+    <nav class="clear">
+        <ul class="main-nav wrapper">
+            <li><a class="home" href="#">Home</a></li>
+            <li class="active"><a class="admin active" href="#">Administration</a></li>
+            <li><a class="jobs" href="#">Jobs</a></li>
+            <li><a class="time" href="#">Time</a></li>
+            <li><a class="reports" href="#">Reports</a></li>
+        </ul>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+
+    <footer class="clear">
+        <div class="wrapper">
+            <p>&copy; 2014 Silicus Technologies LLC., All rights reserved.</p>
+        </div>
+    </footer>
+   
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1", { contentIsOpen: false });
+        var CollapsiblePanel2 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel2", { contentIsOpen: false });
+        var CollapsiblePanel3 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel3", { contentIsOpen: false });
+        var CollapsiblePanel4 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel4", { contentIsOpen: false });
+        var CollapsiblePanel5 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel5");
+        var CollapsiblePanel6 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel6");
+        var CollapsiblePanel7 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel7");
+        var CollapsiblePanel8 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel8");
+    </script>
+</body>
+</html>
