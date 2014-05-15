@@ -1,5 +1,10 @@
 ﻿
-
+@{
+    ViewBag.Title = "Admin Setup";
+   
+ }
+  @using (Html.BeginForm("AdminSetup", "AdminSetup", FormMethod.Post))
+{
 <div>
     <div class="wrapper">
         <section>
@@ -7,9 +12,6 @@
                 <h1>Welcome to Administration Setup Section</h1>
                 @{
 
-                    
-                    Html.RenderPartial("_SearchKeyword");
-                    Html.RenderPartial("_LeftNavigation");
 
                     <div class="content-right">
                         <div id="CollapsiblePanel5" class="CollapsiblePanel right fl">
@@ -37,4 +39,5 @@
         <div class="clear"></div>
     </div>
 </div>
+  }
 

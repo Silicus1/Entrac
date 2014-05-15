@@ -9,7 +9,7 @@ namespace EntracWeb.Controllers
     public class AdminController : Controller
     {
         //
-        // GET: /Admin/ _
+        // GET: /Admin/
         public ActionResult Index()
         {
             return View();

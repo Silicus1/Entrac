@@ -23,7 +23,7 @@ namespace EntracWeb.Controllers
     {
         //
         // GET: /AdminSetup/
-       [HttpPost]
+      
         public ActionResult AdminSetup()
         {
 

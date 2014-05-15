@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <div>
     <header class="wrapper clear">
         <div class="logo">
             <a href="#"><img src="~/Content/images/logo.png" title="Entrac" alt="logo"></a>
@@ -53,7 +54,20 @@
     </nav>
 
     <div class="container body-content">
-        @RenderBody()
+
+
+        <div class="wrapper">
+            <section>
+                <div class="content">
+                    @Html.Partial("_SearchKeyword")
+                    @Html.Partial("_LeftNavigation")
+                    @RenderBody()
+
+                </div>
+            </section>
+            <div class="clear"></div>
+        </div>
+    </div>
         <hr />
     </div>
 
