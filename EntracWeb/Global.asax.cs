@@ -11,6 +11,7 @@ namespace EntracWeb
 {
     public class MvcApplication : System.Web.HttpApplication
     {
+        //Test
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
